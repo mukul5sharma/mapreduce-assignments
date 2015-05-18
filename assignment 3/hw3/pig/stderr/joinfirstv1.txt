@@ -1,0 +1,120 @@
+2015-03-01 07:03:32,048 [main] INFO  org.apache.pig.Main - Apache Pig version 0.11.1.1-amzn (rexported) compiled Aug 03 2013, 22:52:20
+2015-03-01 07:03:32,050 [main] INFO  org.apache.pig.Main - Logging error messages to: /mnt/var/lib/hadoop/steps/s-HRSMDP3Y9AL9/pig_1425193411900.log
+2015-03-01 07:03:36,423 [main] INFO  org.apache.hadoop.fs.s3native.NativeS3FileSystem - Created AmazonS3 with InstanceProfileCredentialsProvider
+2015-03-01 07:03:39,187 [main] INFO  org.apache.pig.impl.io.FileLocalizer - Downloading file s3://mukulbucket/hw3pig/JoinFirstV1.pig to path /mnt/var/lib/hadoop/steps/s-HRSMDP3Y9AL9/tmp/pig3180834802288424629tmp/JoinFirstV1.pig
+2015-03-01 07:03:39,200 [main] INFO  org.apache.hadoop.fs.s3native.NativeS3FileSystem - Opening 's3://mukulbucket/hw3pig/JoinFirstV1.pig' for reading
+2015-03-01 07:03:39,246 [main] INFO  org.apache.hadoop.util.NativeCodeLoader - Loaded the native-hadoop library
+2015-03-01 07:03:39,251 [main] INFO  org.apache.pig.Main - Final script path: /mnt/var/lib/hadoop/steps/s-HRSMDP3Y9AL9/tmp/pig3180834802288424629tmp/JoinFirstV1.pig
+2015-03-01 07:03:39,285 [main] INFO  org.apache.pig.impl.util.Utils - Default bootup file /home/hadoop/.pigbootup not found
+2015-03-01 07:03:39,957 [main] INFO  org.apache.pig.backend.hadoop.executionengine.HExecutionEngine - Connecting to hadoop file system at: hdfs://172.31.39.105:9000
+2015-03-01 07:03:40,585 [main] INFO  org.apache.pig.backend.hadoop.executionengine.HExecutionEngine - Connecting to map-reduce job tracker at: 172.31.39.105:9001
+2015-03-01 07:03:45,413 [main] INFO  org.apache.pig.tools.pigstats.ScriptState - Pig features used in the script: HASH_JOIN,GROUP_BY,FILTER
+2015-03-01 07:03:47,742 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MRCompiler - File concatenation threshold: 100 optimistic? false
+2015-03-01 07:03:48,156 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.CombinerOptimizer - Choosing to move algebraic foreach to combiner
+2015-03-01 07:03:48,316 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MRCompiler$LastInputStreamingOptimizer - Rewrite: POPackage->POForEach to POJoinPackage
+2015-03-01 07:03:48,424 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MultiQueryOptimizer - MR plan size before optimization: 2
+2015-03-01 07:03:48,426 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MultiQueryOptimizer - MR plan size after optimization: 2
+2015-03-01 07:03:49,556 [main] INFO  org.apache.pig.tools.pigstats.ScriptState - Pig script settings are added to the job
+2015-03-01 07:03:49,604 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+2015-03-01 07:03:49,641 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Setting Parallelism to 10
+2015-03-01 07:03:50,089 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - creating jar file Job5146611995476998894.jar
+2015-03-01 07:04:05,508 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - jar file Job5146611995476998894.jar created
+2015-03-01 07:04:05,603 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Setting up single store job
+2015-03-01 07:04:05,647 [main] INFO  org.apache.pig.data.SchemaTupleFrontend - Key [pig.schematuple] is false, will not generate code.
+2015-03-01 07:04:05,648 [main] INFO  org.apache.pig.data.SchemaTupleFrontend - Starting process to move generated code to distributed cacche
+2015-03-01 07:04:05,649 [main] INFO  org.apache.pig.data.SchemaTupleFrontend - Setting key [pig.schematuple.classes] with classes to deserialize []
+2015-03-01 07:04:06,194 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 1 map-reduce job(s) waiting for submission.
+2015-03-01 07:04:06,290 [JobControl] INFO  org.apache.hadoop.mapred.JobClient - Default number of map tasks: null
+2015-03-01 07:04:06,292 [JobControl] INFO  org.apache.hadoop.mapred.JobClient - Setting default number of map tasks based on cluster size to : 40
+2015-03-01 07:04:06,292 [JobControl] INFO  org.apache.hadoop.mapred.JobClient - Default number of reduce tasks: 10
+2015-03-01 07:04:06,725 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 0% complete
+2015-03-01 07:04:06,935 [JobControl] INFO  org.apache.hadoop.security.ShellBasedUnixGroupsMapping - add hadoop to shell userGroupsCache
+2015-03-01 07:04:06,936 [JobControl] INFO  org.apache.hadoop.mapred.JobClient - Setting group to hadoop
+2015-03-01 07:04:07,449 [JobControl] INFO  org.apache.hadoop.fs.s3native.Jets3tNativeFileSystemStore - nextMarker: input/
+2015-03-01 07:04:07,450 [JobControl] INFO  org.apache.hadoop.fs.s3native.NativeS3FileSystem - listStatus s3://mukulbucket/input
+2015-03-01 07:04:07,498 [JobControl] INFO  org.apache.hadoop.mapreduce.lib.input.FileInputFormat - Total input paths to process : 1
+2015-03-01 07:04:07,500 [JobControl] INFO  org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil - Total input paths to process : 1
+2015-03-01 07:04:07,511 [JobControl] INFO  com.hadoop.compression.lzo.GPLNativeCodeLoader - Loaded native gpl library
+2015-03-01 07:04:07,515 [JobControl] WARN  com.hadoop.compression.lzo.LzoCodec - Could not find build properties file with revision hash
+2015-03-01 07:04:07,516 [JobControl] INFO  com.hadoop.compression.lzo.LzoCodec - Successfully loaded & initialized native-lzo library [hadoop-lzo rev UNKNOWN]
+2015-03-01 07:04:07,525 [JobControl] WARN  org.apache.hadoop.io.compress.snappy.LoadSnappy - Snappy native library is available
+2015-03-01 07:04:07,526 [JobControl] INFO  org.apache.hadoop.io.compress.snappy.LoadSnappy - Snappy native library loaded
+2015-03-01 07:04:07,556 [JobControl] INFO  org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil - Total input paths (combined) to process : 65
+2015-03-01 07:04:07,629 [JobControl] INFO  org.apache.hadoop.fs.s3native.Jets3tNativeFileSystemStore - nextMarker: input/
+2015-03-01 07:04:07,630 [JobControl] INFO  org.apache.hadoop.fs.s3native.NativeS3FileSystem - listStatus s3://mukulbucket/input
+2015-03-01 07:04:07,671 [JobControl] INFO  org.apache.hadoop.mapreduce.lib.input.FileInputFormat - Total input paths to process : 1
+2015-03-01 07:04:07,672 [JobControl] INFO  org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil - Total input paths to process : 1
+2015-03-01 07:04:07,675 [JobControl] INFO  org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil - Total input paths (combined) to process : 65
+2015-03-01 07:04:09,636 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - HadoopJobId: job_201503010303_0010
+2015-03-01 07:04:09,636 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Processing aliases FlightData1,FlightData2,Flights1,Flights2,afterJoinOndateAndDest,legalTime,sum
+2015-03-01 07:04:09,636 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - detailed locations: M: FlightData2[10,14],Flights2[17,11],Flights2[24,11],afterJoinOndateAndDest[32,25],FlightData1[9,14],Flights1[12,11],Flights1[23,11],afterJoinOndateAndDest[32,25] C:  R: legalTime[35,12],sum[44,6]
+2015-03-01 07:04:09,636 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - More information at: http://172.31.39.105:9100/jobdetails.jsp?jobid=job_201503010303_0010
+2015-03-01 07:09:01,385 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 35% complete
+2015-03-01 07:09:03,408 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 37% complete
+2015-03-01 07:09:03,925 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 39% complete
+2015-03-01 07:09:04,427 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 40% complete
+2015-03-01 07:09:06,530 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 42% complete
+2015-03-01 07:09:10,551 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 47% complete
+2015-03-01 07:09:35,200 [main] INFO  org.apache.pig.tools.pigstats.ScriptState - Pig script settings are added to the job
+2015-03-01 07:09:35,203 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+2015-03-01 07:09:35,205 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Setting Parallelism to 1
+2015-03-01 07:09:35,766 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - creating jar file Job4600725612072430090.jar
+2015-03-01 07:09:47,552 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - jar file Job4600725612072430090.jar created
+2015-03-01 07:09:47,567 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Setting up single store job
+2015-03-01 07:09:47,569 [main] INFO  org.apache.pig.data.SchemaTupleFrontend - Key [pig.schematuple] is false, will not generate code.
+2015-03-01 07:09:47,570 [main] INFO  org.apache.pig.data.SchemaTupleFrontend - Starting process to move generated code to distributed cacche
+2015-03-01 07:09:47,606 [main] INFO  org.apache.pig.data.SchemaTupleFrontend - Setting key [pig.schematuple.classes] with classes to deserialize []
+2015-03-01 07:09:47,767 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 1 map-reduce job(s) waiting for submission.
+2015-03-01 07:09:47,776 [JobControl] INFO  org.apache.hadoop.mapred.JobClient - Default number of map tasks: null
+2015-03-01 07:09:47,776 [JobControl] INFO  org.apache.hadoop.mapred.JobClient - Setting default number of map tasks based on cluster size to : 40
+2015-03-01 07:09:47,776 [JobControl] INFO  org.apache.hadoop.mapred.JobClient - Default number of reduce tasks: 1
+2015-03-01 07:09:48,249 [JobControl] INFO  org.apache.hadoop.security.ShellBasedUnixGroupsMapping - add hadoop to shell userGroupsCache
+2015-03-01 07:09:48,249 [JobControl] INFO  org.apache.hadoop.mapred.JobClient - Setting group to hadoop
+2015-03-01 07:09:48,478 [JobControl] INFO  org.apache.hadoop.mapreduce.lib.input.FileInputFormat - Total input paths to process : 10
+2015-03-01 07:09:48,479 [JobControl] INFO  org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil - Total input paths to process : 10
+2015-03-01 07:09:48,523 [JobControl] INFO  org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil - Total input paths (combined) to process : 1
+2015-03-01 07:09:49,398 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - HadoopJobId: job_201503010303_0011
+2015-03-01 07:09:49,398 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Processing aliases average,groupedSum
+2015-03-01 07:09:49,398 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - detailed locations: M: average[46,10],groupedSum[45,13] C: average[46,10],groupedSum[45,13] R: average[46,10]
+2015-03-01 07:09:49,399 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - More information at: http://172.31.39.105:9100/jobdetails.jsp?jobid=job_201503010303_0011
+2015-03-01 07:10:34,662 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 51% complete
+2015-03-01 07:10:37,674 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 60% complete
+2015-03-01 07:10:40,687 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 65% complete
+2015-03-01 07:10:43,700 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 66% complete
+2015-03-01 07:10:47,217 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 69% complete
+2015-03-01 07:10:50,231 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 75% complete
+2015-03-01 07:11:24,411 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 100% complete
+2015-03-01 07:11:24,440 [main] INFO  org.apache.pig.tools.pigstats.SimplePigStats - Script Statistics: 
+
+HadoopVersion	PigVersion	UserId	StartedAt	FinishedAt	Features
+1.0.3	0.11.1.1-amzn	hadoop	2015-03-01 07:03:49	2015-03-01 07:11:24	HASH_JOIN,GROUP_BY,FILTER
+
+Success!
+
+Job Stats (time in seconds):
+JobId	Maps	Reduces	MaxMapTime	MinMapTIme	AvgMapTime	MedianMapTime	MaxReduceTime	MinReduceTime	AvgReduceTime	MedianReducetime	Alias	Feature	Outputs
+job_201503010303_0010	130	10	87	18	38	27	214	193	200	199	FlightData1,FlightData2,Flights1,Flights2,afterJoinOndateAndDest,legalTime,sum	HASH_JOIN	
+job_201503010303_0011	1	1	39	39	39	39	24	24	24	24	average,groupedSum	GROUP_BY,COMBINER	s3://mukulbucket/hw3pig/joinfv1,
+
+Input(s):
+Successfully read 13395076 records from: "s3://mukulbucket/input"
+Successfully read 13395076 records from: "s3://mukulbucket/input"
+
+Output(s):
+Successfully stored 1 records in: "s3://mukulbucket/hw3pig/joinfv1"
+
+Counters:
+Total records written : 1
+Total bytes written : 0
+Spillable Memory Manager spill count : 0
+Total bags proactively spilled: 0
+Total records proactively spilled: 0
+
+Job DAG:
+job_201503010303_0010	->	job_201503010303_0011,
+job_201503010303_0011
+
+
+2015-03-01 07:11:24,806 [main] WARN  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Encountered Warning FIELD_DISCARDED_TYPE_CONVERSION_FAILED 1778688 time(s).
+2015-03-01 07:11:24,806 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Success!
+Command exiting with ret '0'
